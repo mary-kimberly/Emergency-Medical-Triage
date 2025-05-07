@@ -74,7 +74,6 @@ Red                Emergency - Seek care immediately                  danger
 Yellow             Urgent - Visit the hospital soon                   warning     
 Green              Non-urgent - Can wait to visit clinic              success     
 
----
 
  Tech Stack
 
@@ -83,7 +82,6 @@ Green              Non-urgent - Can wait to visit clinic              success
 - Model: Trained & saved with joblib
 - Database: Flask-SQLAlchemy (e.g., SQLite/MySQL/PostgreSQL)
 
----
 
 Project Structure
 
@@ -128,22 +126,22 @@ Visit: http://localhost:5000/
 
 Field                 Input Type  
 |----------------------|---------------|
-Age                          Integer     
+Age                       Integer     
 Heart Rate               Integer     
-Respiratory Rate     Integer     
-Temperature            Float       
-Blood Pressure         String      
-Oxygen Saturation    Integer     
-Symptom                 String (Text) 
+Respiratory Rate         Integer     
+Temperature              Float       
+Blood Pressure           String      
+Oxygen Saturation        Integer     
+Symptom                  String (Text) 
 Pre-existing             Condition String (Text) 
 
 
- Data Persistence
+Data Persistence
 
 Each submission is saved in a database via the Triage model. Fields stored include all inputs and the predicted triage level.
 
 
- Testing & Validation
+Testing & Validation
 
 - Unit tests can be added to test form validation, model prediction pipeline, and database inserts.
 - Ensure the model file matches the expected input schema.
